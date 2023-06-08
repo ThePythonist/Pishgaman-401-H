@@ -5,7 +5,8 @@ def generate1():
     password = []
 
     for i in range(6):
-        number = str(random.randint(0, 9))
+        numbers = range(0, 10)
+        number = str(random.choice(numbers))
         password.append(number)
 
     pswd = "".join(password)
@@ -13,6 +14,7 @@ def generate1():
 
 
 # generate1()
+
 
 def generate2():
     password = ""
@@ -23,4 +25,4 @@ def generate2():
     print(password)
 
 
-generate2()
+# generate2()
